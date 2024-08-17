@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="gradiente-fundo">
+        <div class="box-to-do">
+            <h2>O que devo fazer? <img src="icon.png" alt="icone da lista"></h2>
+            <div class="coiso">
+                <input type="text" id="caixa-escreve" placeholder="Escreva aqui...">
+                <button onclick="addTask()">Adicionar</button>
+            </div>
+            <ul id="box-lista">
+            </ul>
+        </div>
+    </div>
+    <div class="menu-lateral" id="menuLateral">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="arrow"></div>
+        </div>
+        <div id="deletedTasks">
+            <h3>Tasks Excluidas</h3>
+            <div id="emptyMessage">Esta tão silencioso aqui...</div>
+            <ul id="deletedTasksList">
+            </ul>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
