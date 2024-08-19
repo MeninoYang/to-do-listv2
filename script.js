@@ -43,13 +43,13 @@ boxlista.addEventListener("click", function(e) {
 
 deletedTasksList.addEventListener("click", function(e) {
     if (e.target.tagName === "LI") {
-        const taskText = e.target.innerHTML.split(' <small>')[0]; // Pega o texto da tarefa sem a data
+        const taskText = e.target.innerHTML.split(' <small>')[0];
         const taskChecked = e.target.classList.contains("checked");
         
         const restoredTask = document.createElement("li");
         restoredTask.innerHTML = taskText;
         if (taskChecked) {
-            restoredTask.classList.add("verificado"); // Marca a tarefa como "checked"
+            restoredTask.classList.add("verificado"); 
         }
         const span = document.createElement("span");
         span.innerHTML = "\u00d7";
